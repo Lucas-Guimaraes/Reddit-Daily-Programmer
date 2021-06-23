@@ -135,8 +135,9 @@ while sleep_test:
 
 final_sleep_times = time_to_num(wakeup_time[0], wakeup_time[1], wakeup_time[2])
 if wakeup_time[1] == 0:
-    wakeup_time = '00'
+    wakeup_time[1] = '00'
 
+print(wakeup_time)
 final_wake_time = "{0}:{1} {2}".format(wakeup_time[0], wakeup_time[1], wakeup_time[2].upper())
 
 print("\n*--------*--------*\n")
